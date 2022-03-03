@@ -1,0 +1,11 @@
+Resource : https://www.tessellationtech.io/import-vs-direct-query-power-bi/#:~:text=When%20connecting%20to%20data%20in,your%20source%20at%20run%20time.
+
+When connecting to data in Power BI, you need to choose whether you want to use Import or Direct Query mode for connecting to your data.
+
+Using the Import method, Power BI captures a snapshot of your data and caches it in Power BI Desktop. A Direct Query connection will run queries directly to your source at run time. 
+
+What is Power BI Direct Query?
+When using the Direct Query method of connection, your dashboard will be directly querying the data source at run time. Every filter and interaction with the report will kick off further queries. No data is imported into Power BI so you are always querying the data that is present in the data source itself. We’ll cover how this could be beneficial later in the article.
+
+What is Power BI Import?
+The Import method of connection means that Power BI will cache the data that you’re connected to creating a point in time snapshot of your data. All of the interactions and filters applied to your data will be done to this compressed (courtesy of the Vertipaq storage engine) cache source instead of the actual data source itself. 
